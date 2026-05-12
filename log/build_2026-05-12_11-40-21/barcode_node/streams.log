@@ -1,0 +1,68 @@
+[0.124s] Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/barcode_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/barcode_node
+[0.850s] -- The C compiler identification is GNU 11.4.0
+[1.996s] -- The CXX compiler identification is GNU 11.4.0
+[2.689s] -- Detecting C compiler ABI info
+[3.145s] -- Detecting C compiler ABI info - done
+[3.182s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.183s] -- Detecting C compile features
+[3.184s] -- Detecting C compile features - done
+[3.196s] -- Detecting CXX compiler ABI info
+[3.668s] -- Detecting CXX compiler ABI info - done
+[3.699s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.700s] -- Detecting CXX compile features
+[3.703s] -- Detecting CXX compile features - done
+[3.715s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.207s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.565s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[5.072s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.096s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.144s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.225s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.313s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.534s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.547s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.667s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.365s] -- Found FastRTPS: /opt/ros/humble/include  
+[17.001s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[17.023s] -- Looking for pthread.h
+[17.558s] -- Looking for pthread.h - found
+[17.560s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[18.071s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[18.075s] -- Found Threads: TRUE  
+[18.225s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.510s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.510s] -- Configured cppcheck include dirs: 
+[18.511s] -- Configured cppcheck exclude dirs and/or files: 
+[18.513s] -- Added test 'lint_cmake' to check CMake code style
+[18.519s] -- Added test 'uncrustify' to check C / C++ code style
+[18.520s] -- Configured uncrustify additional arguments: 
+[18.522s] -- Added test 'xmllint' to check XML markup files
+[18.532s] -- Configuring done
+[18.592s] -- Generating done
+[18.607s] -- Build files have been written to: /home/vigma/ros2_ws/build/barcode_node
+[18.634s] Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/barcode_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/barcode_node
+[18.642s] Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/barcode_node -- -j16 -l16
+[18.854s] [ 50%] [32mBuilding CXX object CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o[0m
+[32.165s] [100%] [32m[1mLinking CXX executable barcode_node[0m
+[32.836s] [100%] Built target barcode_node
+[32.889s] Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/barcode_node -- -j16 -l16
+[32.897s] Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/barcode_node
+[32.917s] -- Install configuration: ""
+[32.922s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/lib/barcode_node/barcode_node
+[32.927s] -- Set runtime path of "/home/vigma/ros2_ws/install/barcode_node/lib/barcode_node/barcode_node" to ""
+[32.933s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/package_run_dependencies/barcode_node
+[32.935s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/parent_prefix_path/barcode_node
+[32.939s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/ament_prefix_path.sh
+[32.940s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/ament_prefix_path.dsv
+[32.941s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/path.sh
+[32.945s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/path.dsv
+[32.947s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.bash
+[32.948s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.sh
+[32.949s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.zsh
+[32.950s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.dsv
+[32.951s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/package.dsv
+[32.954s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/packages/barcode_node
+[32.957s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/cmake/barcode_nodeConfig.cmake
+[32.958s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/cmake/barcode_nodeConfig-version.cmake
+[32.959s] -- Installing: /home/vigma/ros2_ws/install/barcode_node/share/barcode_node/package.xml
+[32.971s] Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/barcode_node

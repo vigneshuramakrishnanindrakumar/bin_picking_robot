@@ -1,0 +1,16 @@
+/home/vigma/ros2_ws/install/cell_controller/lib/cell_controller/cell_controller
+/home/vigma/ros2_ws/install/cell_controller/share/ament_index/resource_index/package_run_dependencies/cell_controller
+/home/vigma/ros2_ws/install/cell_controller/share/ament_index/resource_index/parent_prefix_path/cell_controller
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/environment/ament_prefix_path.sh
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/environment/ament_prefix_path.dsv
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/environment/path.sh
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/environment/path.dsv
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/local_setup.bash
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/local_setup.sh
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/local_setup.zsh
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/local_setup.dsv
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/package.dsv
+/home/vigma/ros2_ws/install/cell_controller/share/ament_index/resource_index/packages/cell_controller
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/cmake/cell_controllerConfig.cmake
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/cmake/cell_controllerConfig-version.cmake
+/home/vigma/ros2_ws/install/cell_controller/share/cell_controller/package.xml

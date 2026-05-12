@@ -1,0 +1,6 @@
+Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/barcode_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/barcode_node
+Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/barcode_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/barcode_node
+Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/barcode_node -- -j16 -l16
+Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/barcode_node -- -j16 -l16
+Invoking command in '/home/vigma/ros2_ws/build/barcode_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/barcode_node
+Invoked command in '/home/vigma/ros2_ws/build/barcode_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/barcode_node

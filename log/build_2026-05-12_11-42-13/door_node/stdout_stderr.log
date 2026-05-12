@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target door_node[0m
+[100%] Built target door_node
+-- Install configuration: ""
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/ament_index/resource_index/package_run_dependencies/door_node
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/ament_index/resource_index/parent_prefix_path/door_node
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/environment/path.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/environment/path.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/local_setup.bash
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/local_setup.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/local_setup.zsh
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/local_setup.dsv
+-- Installing: /home/vigma/ros2_ws/install/door_node/share/door_node/package.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/ament_index/resource_index/packages/door_node
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/cmake/door_nodeConfig.cmake
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/cmake/door_nodeConfig-version.cmake
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/share/door_node/package.xml
+-- Up-to-date: /home/vigma/ros2_ws/install/door_node/lib/door_node/door_node

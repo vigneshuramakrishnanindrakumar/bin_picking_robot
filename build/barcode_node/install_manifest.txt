@@ -1,0 +1,16 @@
+/home/vigma/ros2_ws/install/barcode_node/lib/barcode_node/barcode_node
+/home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/package_run_dependencies/barcode_node
+/home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/parent_prefix_path/barcode_node
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/ament_prefix_path.sh
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/ament_prefix_path.dsv
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/path.sh
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/environment/path.dsv
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.bash
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.sh
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.zsh
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/local_setup.dsv
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/package.dsv
+/home/vigma/ros2_ws/install/barcode_node/share/ament_index/resource_index/packages/barcode_node
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/cmake/barcode_nodeConfig.cmake
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/cmake/barcode_nodeConfig-version.cmake
+/home/vigma/ros2_ws/install/barcode_node/share/barcode_node/package.xml

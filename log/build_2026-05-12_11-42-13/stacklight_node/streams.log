@@ -1,0 +1,23 @@
+[0.182s] Invoking command in '/home/vigma/ros2_ws/build/stacklight_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/stacklight_node -- -j16 -l16
+[0.365s] [35m[1mConsolidate compiler generated dependencies of target stacklight_node[0m
+[0.452s] [100%] Built target stacklight_node
+[0.566s] Invoked command in '/home/vigma/ros2_ws/build/stacklight_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/stacklight_node -- -j16 -l16
+[0.627s] Invoking command in '/home/vigma/ros2_ws/build/stacklight_node': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/stacklight_node
+[0.667s] -- Install configuration: ""
+[0.668s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/package_run_dependencies/stacklight_node
+[0.668s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/parent_prefix_path/stacklight_node
+[0.670s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/ament_prefix_path.sh
+[0.674s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/ament_prefix_path.dsv
+[0.675s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/path.sh
+[0.676s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/path.dsv
+[0.677s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.bash
+[0.678s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.sh
+[0.680s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.zsh
+[0.681s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.dsv
+[0.681s] -- Installing: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/package.dsv
+[0.682s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/packages/stacklight_node
+[0.683s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/cmake/stacklight_nodeConfig.cmake
+[0.684s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/cmake/stacklight_nodeConfig-version.cmake
+[0.684s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/package.xml
+[0.685s] -- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/lib/stacklight_node/stacklight_node
+[0.841s] Invoked command in '/home/vigma/ros2_ws/build/stacklight_node' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/stacklight_node

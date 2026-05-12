@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target stacklight_node[0m
+[100%] Built target stacklight_node
+-- Install configuration: ""
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/package_run_dependencies/stacklight_node
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/parent_prefix_path/stacklight_node
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/ament_prefix_path.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/path.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/environment/path.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.bash
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.sh
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.zsh
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/local_setup.dsv
+-- Installing: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/package.dsv
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/ament_index/resource_index/packages/stacklight_node
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/cmake/stacklight_nodeConfig.cmake
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/cmake/stacklight_nodeConfig-version.cmake
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/share/stacklight_node/package.xml
+-- Up-to-date: /home/vigma/ros2_ws/install/stacklight_node/lib/stacklight_node/stacklight_node
