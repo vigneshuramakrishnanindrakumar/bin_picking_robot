@@ -26,7 +26,7 @@ HTTP flow:
 `emergency_node`
 `stacklight_node`
 `cell_controller`
-`hmi
+`hmi`
 
 ## Prerequisites
 
