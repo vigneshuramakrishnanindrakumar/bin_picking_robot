@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bin Picking Cell – HMI</title>
+  <style>
+    :root {
+      --bg:       #0f1117;
+      --surface:  #1a1d27;
+      --border:   #2a2d3a;
+      --text:     #e2e8f0;
+      --muted:    #94a3b8;
+      --green:    #22c55e;
+      --yellow:   #eab308;
+      --red:      #ef4444;
+      --blue:     #3b82f6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 600; }
+    header .subtitle { color: var(--muted); font-size: 0.85rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .card h2 {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    /* Stack-light */
+    .stacklight-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .light-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.08);
+      transition: background .4s, box-shadow .4s;
+    }
+    .light-label { font-size: 1rem; font-weight: 600; }
+
+    .light-green  { background: var(--green);  box-shadow: 0 0 24px var(--green); }
+    .light-yellow { background: var(--yellow); box-shadow: 0 0 24px var(--yellow); }
+    .light-red    { background: var(--red);    box-shadow: 0 0 24px var(--red); }
+    .light-off    { background: #333; }
+
+    /* Status badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .badge-ok   { background: rgba(34,197,94,.15);  color: var(--green);  }
+    .badge-warn { background: rgba(234,179,8,.15);  color: var(--yellow); }
+    .badge-err  { background: rgba(239,68,68,.15);  color: var(--red);    }
+
+    /* Key-value rows */
+    .kv { display: flex; flex-direction: column; gap: 10px; }
+    .kv-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: rgba(255,255,255,.03);
+      border-radius: 8px;
+      font-size: 0.88rem;
+    }
+    .kv-row .key { color: var(--muted); }
+    .kv-row .val { font-weight: 600; font-family: monospace; }
+
+    .null-val { color: var(--muted); font-style: italic; }
+
+    /* Pulse animation for emergency */
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .pulse { animation: pulse 1s infinite; }
+
+    #last-update { color: var(--muted); font-size: 0.75rem; margin-top: 20px; text-align: right; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🤖 Bin Picking Cell — HMI</h1>
+    <div class="subtitle">Live cell status dashboard</div>
+  </div>
+</header>
+
+<div class="grid">
+
+  <!-- Stack Light -->
+  <div class="card">
+    <h2>Stack Light</h2>
+    <div class="stacklight-wrap">
+      <div class="light-circle light-off" id="stack-circle"></div>
+      <div class="light-label" id="stack-label">—</div>
+    </div>
+  </div>
+
+  <!-- Door & Emergency -->
+  <div class="card">
+    <h2>Cell Status</h2>
+    <div class="kv">
+      <div class="kv-row">
+        <span class="key">Door</span>
+        <span class="val" id="door-val">—</span>
+      </div>
+      <div class="kv-row">
+        <span class="key">Emergency Button</span>
+        <span class="val" id="emergency-val">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Last Request -->
+  <div class="card">
+    <h2>Last Pick Request (WMS → Robot)</h2>
+    <div class="kv" id="req-kv">
+      <div class="kv-row"><span class="key">pickId</span><span class="val null-val">waiting…</span></div>
+      <div class="kv-row"><span class="key">quantity</span><span class="val null-val">—</span></div>
+    </div>
+  </div>
+
+  <!-- Last Response -->
+  <div class="card">
+    <h2>Last Pick Response (Robot → WMS)</h2>
+    <div class="kv" id="res-kv">
+      <div class="kv-row"><span class="key">pickId</span><span class="val null-val">waiting…</span></div>
+      <div class="kv-row"><span class="key">pickSuccessful</span><span class="val null-val">—</span></div>
+      <div class="kv-row"><span class="key">itemBarcode</span><span class="val null-val">—</span></div>
+      <div class="kv-row"><span class="key">errorMessage</span><span class="val null-val">—</span></div>
+    </div>
+  </div>
+
+</div>
+
+<div id="last-update">Last updated: —</div>
+
+<script>
+  function kv(key, value, warn) {
+    const valStr = (value === null || value === undefined) ? '<span class="null-val">null</span>' : value;
+    return `<div class="kv-row">
+      <span class="key">${key}</span>
+      <span class="val${warn ? ' pulse' : ''}">${valStr}</span>
+    </div>`;
+  }
+
+  function updateUI(s) {
+    // Stack light
+    const circle = document.getElementById('stack-circle');
+    const label  = document.getElementById('stack-label');
+    circle.className = 'light-circle';
+    if (s.stack_light === 0) {
+      circle.classList.add('light-green');
+      label.textContent = 'OPERATIONAL';
+      label.style.color = 'var(--green)';
+    } else if (s.stack_light === 1) {
+      circle.classList.add('light-yellow');
+      label.textContent = 'PAUSED';
+      label.style.color = 'var(--yellow)';
+    } else if (s.stack_light === -1) {
+      circle.classList.add('light-red', 'pulse');
+      label.textContent = 'EMERGENCY';
+      label.style.color = 'var(--red)';
+    } else {
+      label.textContent = '—';
+      label.style.color = 'var(--muted)';
+    }
+
+    // Door
+    const doorEl = document.getElementById('door-val');
+    if (s.door_closed) {
+      doorEl.innerHTML = '<span class="badge badge-ok">✓ Closed</span>';
+    } else {
+      doorEl.innerHTML = '<span class="badge badge-warn">⚠ Open</span>';
+    }
+
+    // Emergency
+    const emEl = document.getElementById('emergency-val');
+    if (s.emergency_pressed) {
+      emEl.innerHTML = '<span class="badge badge-err pulse">🔴 PRESSED</span>';
+    } else {
+      emEl.innerHTML = '<span class="badge badge-ok">✓ Released</span>';
+    }
+
+    // Last request
+    const req = s.last_request;
+    document.getElementById('req-kv').innerHTML = req
+      ? kv('pickId', req.pickId) + kv('quantity', req.quantity)
+      : kv('pickId', null) + kv('quantity', null);
+
+    // Last response
+    const res = s.last_response;
+    if (res) {
+      const ok = res.pickSuccessful;
+      document.getElementById('res-kv').innerHTML =
+        kv('pickId', res.pickId) +
+        kv('pickSuccessful',
+           ok ? '<span class="badge badge-ok">✓ true</span>'
+              : '<span class="badge badge-err">✗ false</span>') +
+        kv('itemBarcode', res.itemBarcode) +
+        kv('errorMessage', res.errorMessage || null, !ok);
+    } else {
+      document.getElementById('res-kv').innerHTML =
+        kv('pickId', null) + kv('pickSuccessful', null) +
+        kv('itemBarcode', null) + kv('errorMessage', null);
+    }
+
+    document.getElementById('last-update').textContent =
+      'Last updated: ' + new Date().toLocaleTimeString();
+  }
+
+  async function poll() {
+    try {
+      const r = await fetch('/state');
+      const s = await r.json();
+      updateUI(s);
+    } catch (e) {
+      console.warn('Poll failed:', e);
+    }
+    setTimeout(poll, 1000);
+  }
+
+  poll();
+</script>
+</body>
+</html>

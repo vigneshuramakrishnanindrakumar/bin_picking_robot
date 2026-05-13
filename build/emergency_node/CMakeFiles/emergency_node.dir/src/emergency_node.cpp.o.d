@@ -1,8 +1,7 @@
 CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
- /home/vigma/ros2_ws/src/emergency_node/src/emergency_node.cpp \
- /usr/include/stdc-predef.h \
- /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
- /usr/include/c++/11/csignal \
+ /home/vigma/ros2_ws/bin_picking_robot/src/emergency_node/src/emergency_node.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,59 +12,39 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h /usr/include/signal.h \
+ /usr/include/c++/11/pstl/pstl_config.h /usr/include/c++/11/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
  /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/c++/11/limits /usr/include/c++/11/ctime /usr/include/time.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
- /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
- /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h \
- /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
- /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
- /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
- /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/ext/numeric_traits.h \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
  /usr/include/c++/11/bits/exception_defines.h \
- /usr/include/c++/11/bits/cpp_type_traits.h \
- /usr/include/c++/11/ext/type_traits.h \
- /usr/include/c++/11/ext/numeric_traits.h \
  /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
- /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/stl_iterator_base_types.h \
  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
  /usr/include/c++/11/bits/concept_check.h \
@@ -85,11 +64,6 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
  /usr/include/c++/11/bits/stl_relops.h \
@@ -111,8 +85,6 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/c++/11/bits/shared_ptr_base.h /usr/include/c++/11/typeinfo \
  /usr/include/c++/11/bits/allocated_ptr.h \
  /usr/include/c++/11/bits/refwrap.h \
@@ -123,16 +95,15 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
- /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
- /usr/include/x86_64-linux-gnu/bits/time.h \
- /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
- /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
@@ -147,11 +118,39 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
+ /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
+ /usr/include/c++/11/csignal /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+ /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+ /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstksz.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h \
+ /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
  /usr/include/c++/11/future /usr/include/c++/11/mutex \
- /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/cstdint /usr/include/c++/11/limits \
- /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/system_error \
  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
  /usr/include/c++/11/cerrno /usr/include/errno.h \
@@ -618,4 +617,20 @@ CMakeFiles/emergency_node.dir/src/emergency_node.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
- /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp
+ /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/emergency_state.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__struct.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__builder.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__traits.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__type_support.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/press_emergency.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__struct.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__builder.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__traits.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__type_support.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/reset_emergency.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__struct.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__builder.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__traits.hpp \
+ /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__type_support.hpp

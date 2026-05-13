@@ -1,8 +1,8 @@
-# Install script for directory: /home/vigma/ros2_ws/src/emergency_node
+# Install script for directory: /home/vigma/ros2_ws/bin_picking_robot/src/emergency_node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/install/emergency_node")
+  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/bin_picking_robot/install/emergency_node")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,11 +43,31 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/emergency_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/emergency_node" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/emergency_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node"
+         OLD_RPATH "/opt/ros/humble/lib:/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/emergency_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/emergency_node")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/emergency_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -55,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,62 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/packages/emergency_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_index/share/ament_index/resource_index/packages/emergency_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node/cmake" TYPE FILE FILES
-    "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_core/emergency_nodeConfig.cmake"
-    "/home/vigma/ros2_ws/build/emergency_node/ament_cmake_core/emergency_nodeConfig-version.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_core/emergency_nodeConfig.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/ament_cmake_core/emergency_nodeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/src/emergency_node/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/emergency_node" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/build/emergency_node/emergency_node")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node"
-         OLD_RPATH "/opt/ros/humble/lib:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/emergency_node/emergency_node")
-    endif()
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/emergency_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/src/emergency_node/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vigma/ros2_ws/build/emergency_node/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vigma/ros2_ws/bin_picking_robot/build/emergency_node/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

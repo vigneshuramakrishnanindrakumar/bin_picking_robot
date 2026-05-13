@@ -1,6 +1,0 @@
-Invoking command in '/home/vigma/ros2_ws/build/stacklight_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/stacklight_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/stacklight_node
-Invoked command in '/home/vigma/ros2_ws/build/stacklight_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/src/stacklight_node -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/install/stacklight_node
-Invoking command in '/home/vigma/ros2_ws/build/stacklight_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/stacklight_node -- -j16 -l16
-Invoked command in '/home/vigma/ros2_ws/build/stacklight_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/build/stacklight_node -- -j16 -l16
-Invoking command in '/home/vigma/ros2_ws/build/stacklight_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/stacklight_node
-Invoked command in '/home/vigma/ros2_ws/build/stacklight_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/build/stacklight_node

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/src/stacklight_node
+CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vigma/ros2_ws/build/stacklight_node
+CMAKE_BINARY_DIR = /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/vigma/ros2_ws/build/stacklight_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/src/stacklight_node /home/vigma/ros2_ws/src/stacklight_node /home/vigma/ros2_ws/build/stacklight_node /home/vigma/ros2_ws/build/stacklight_node /home/vigma/ros2_ws/build/stacklight_node/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -54,16 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/src/cell_controller
+CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/bin_picking_robot/src/cell_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vigma/ros2_ws/build/cell_controller
+CMAKE_BINARY_DIR = /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cell_controller.dir/all
+all: CMakeFiles/robot_server.dir/all
+all: CMakeFiles/wms_server.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +74,8 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/cell_controller_uninstall.dir/clean
-clean: CMakeFiles/cell_controller.dir/clean
+clean: CMakeFiles/robot_server.dir/clean
+clean: CMakeFiles/wms_server.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -83,14 +85,14 @@ clean: CMakeFiles/cell_controller.dir/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/cell_controller_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/build/cell_controller/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -109,14 +111,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/cell_controller_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller_uninstall.dir/build.make CMakeFiles/cell_controller_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller_uninstall.dir/build.make CMakeFiles/cell_controller_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/build/cell_controller/CMakeFiles --progress-num= "Built target cell_controller_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles --progress-num= "Built target cell_controller_uninstall"
 .PHONY : CMakeFiles/cell_controller_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cell_controller_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cell_controller_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
 .PHONY : CMakeFiles/cell_controller_uninstall.dir/rule
 
 # Convenience name for target.
@@ -129,30 +131,56 @@ CMakeFiles/cell_controller_uninstall.dir/clean:
 .PHONY : CMakeFiles/cell_controller_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cell_controller.dir
+# Target rules for target CMakeFiles/robot_server.dir
 
 # All Build rule for target.
-CMakeFiles/cell_controller.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/build/cell_controller/CMakeFiles --progress-num=1,2 "Built target cell_controller"
-.PHONY : CMakeFiles/cell_controller.dir/all
+CMakeFiles/robot_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles --progress-num=1,2 "Built target robot_server"
+.PHONY : CMakeFiles/robot_server.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cell_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cell_controller.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
-.PHONY : CMakeFiles/cell_controller.dir/rule
+CMakeFiles/robot_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
+.PHONY : CMakeFiles/robot_server.dir/rule
 
 # Convenience name for target.
-cell_controller: CMakeFiles/cell_controller.dir/rule
-.PHONY : cell_controller
+robot_server: CMakeFiles/robot_server.dir/rule
+.PHONY : robot_server
 
 # clean rule for target.
-CMakeFiles/cell_controller.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/clean
-.PHONY : CMakeFiles/cell_controller.dir/clean
+CMakeFiles/robot_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/clean
+.PHONY : CMakeFiles/robot_server.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/wms_server.dir
+
+# All Build rule for target.
+CMakeFiles/wms_server.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles --progress-num=3,4 "Built target wms_server"
+.PHONY : CMakeFiles/wms_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wms_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/wms_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
+.PHONY : CMakeFiles/wms_server.dir/rule
+
+# Convenience name for target.
+wms_server: CMakeFiles/wms_server.dir/rule
+.PHONY : wms_server
+
+# clean rule for target.
+CMakeFiles/wms_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/clean
+.PHONY : CMakeFiles/wms_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

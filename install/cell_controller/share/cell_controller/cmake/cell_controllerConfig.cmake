@@ -16,7 +16,7 @@ set(_cell_controller_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT cell_controller_FIND_QUIETLY)
-  message(STATUS "Found cell_controller: 0.0.0 (${cell_controller_DIR})")
+  message(STATUS "Found cell_controller: 0.0.1 (${cell_controller_DIR})")
 endif()
 
 # warn when using a deprecated package

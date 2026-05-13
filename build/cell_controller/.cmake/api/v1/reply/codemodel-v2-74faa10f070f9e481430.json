@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-bb55eb84fa3fe05f5063.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "cell_controller",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "cell_controller_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cell_controller_uninstall-84dee17d3cb15c893496.json",
+					"name" : "cell_controller_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "robot_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-robot_server-84bdfabcabd3c5538ad8.json",
+					"name" : "robot_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-21e2189e2f5042078068.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wms_server::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wms_server-fb68dc3db69a201e7b66.json",
+					"name" : "wms_server",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller",
+		"source" : "/home/vigma/ros2_ws/bin_picking_robot/src/cell_controller"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

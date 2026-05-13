@@ -16,7 +16,7 @@ set(_barcode_node_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT barcode_node_FIND_QUIETLY)
-  message(STATUS "Found barcode_node: 0.0.0 (${barcode_node_DIR})")
+  message(STATUS "Found barcode_node: 0.0.1 (${barcode_node_DIR})")
 endif()
 
 # warn when using a deprecated package

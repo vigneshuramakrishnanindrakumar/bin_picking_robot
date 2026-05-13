@@ -1,0 +1,6 @@
+Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/bin_picking_robot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/bin_picking_robot/install/interfaces
+Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/bin_picking_robot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/bin_picking_robot/install/interfaces
+Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/bin_picking_robot/build/interfaces -- -j16 -l16
+Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/bin_picking_robot/build/interfaces -- -j16 -l16
+Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/bin_picking_robot/build/interfaces
+Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/bin_picking_robot/build/interfaces

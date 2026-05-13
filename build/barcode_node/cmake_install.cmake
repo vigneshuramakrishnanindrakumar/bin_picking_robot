@@ -1,8 +1,8 @@
-# Install script for directory: /home/vigma/ros2_ws/src/barcode_node
+# Install script for directory: /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/install/barcode_node")
+  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/bin_picking_robot/install/barcode_node")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/barcode_node/barcode_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/barcode_node" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/build/barcode_node/barcode_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/barcode_node" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/barcode_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/barcode_node/barcode_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/barcode_node/barcode_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/barcode_node/barcode_node"
-         OLD_RPATH "/opt/ros/humble/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/barcode_node/barcode_node")
@@ -63,11 +63,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/barcode_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/barcode_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/barcode_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/barcode_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +83,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/packages/barcode_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_index/share/ament_index/resource_index/packages/barcode_node")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node/cmake" TYPE FILE FILES
-    "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_core/barcode_nodeConfig.cmake"
-    "/home/vigma/ros2_ws/build/barcode_node/ament_cmake_core/barcode_nodeConfig-version.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_core/barcode_nodeConfig.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/ament_cmake_core/barcode_nodeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/src/barcode_node/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/barcode_node" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/src/barcode_node/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +129,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vigma/ros2_ws/build/barcode_node/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

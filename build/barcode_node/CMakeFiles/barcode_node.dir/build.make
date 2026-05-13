@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/src/barcode_node
+CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vigma/ros2_ws/build/barcode_node
+CMAKE_BINARY_DIR = /home/vigma/ros2_ws/bin_picking_robot/build/barcode_node
 
 # Include any dependencies generated for this target.
 include CMakeFiles/barcode_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/barcode_node.dir/progress.make
 include CMakeFiles/barcode_node.dir/flags.make
 
 CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o: CMakeFiles/barcode_node.dir/flags.make
-CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o: /home/vigma/ros2_ws/src/barcode_node/src/barcode_node.cpp
+CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o: /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node/src/barcode_node.cpp
 CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o: CMakeFiles/barcode_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vigma/ros2_ws/build/barcode_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o -MF CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o.d -o CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o -c /home/vigma/ros2_ws/src/barcode_node/src/barcode_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o -MF CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o.d -o CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o -c /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node/src/barcode_node.cpp
 
 CMakeFiles/barcode_node.dir/src/barcode_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/barcode_node.dir/src/barcode_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vigma/ros2_ws/src/barcode_node/src/barcode_node.cpp > CMakeFiles/barcode_node.dir/src/barcode_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node/src/barcode_node.cpp > CMakeFiles/barcode_node.dir/src/barcode_node.cpp.i
 
 CMakeFiles/barcode_node.dir/src/barcode_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/barcode_node.dir/src/barcode_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vigma/ros2_ws/src/barcode_node/src/barcode_node.cpp -o CMakeFiles/barcode_node.dir/src/barcode_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node/src/barcode_node.cpp -o CMakeFiles/barcode_node.dir/src/barcode_node.cpp.s
 
 # Object files for target barcode_node
 barcode_node_OBJECTS = \
@@ -93,12 +93,12 @@ barcode_node_EXTERNAL_OBJECTS =
 barcode_node: CMakeFiles/barcode_node.dir/src/barcode_node.cpp.o
 barcode_node: CMakeFiles/barcode_node.dir/build.make
 barcode_node: /opt/ros/humble/lib/librclcpp.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
 barcode_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 barcode_node: /opt/ros/humble/lib/librcl.so
 barcode_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -132,22 +132,30 @@ barcode_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 barcode_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 barcode_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 barcode_node: /opt/ros/humble/lib/libtracetools.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 barcode_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 barcode_node: /opt/ros/humble/lib/librmw.so
-barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+barcode_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+barcode_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 barcode_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 barcode_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 barcode_node: /opt/ros/humble/lib/librcpputils.so
@@ -155,7 +163,7 @@ barcode_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 barcode_node: /opt/ros/humble/lib/librcutils.so
 barcode_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 barcode_node: CMakeFiles/barcode_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vigma/ros2_ws/build/barcode_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable barcode_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable barcode_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/barcode_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -167,6 +175,6 @@ CMakeFiles/barcode_node.dir/clean:
 .PHONY : CMakeFiles/barcode_node.dir/clean
 
 CMakeFiles/barcode_node.dir/depend:
-	cd /home/vigma/ros2_ws/build/barcode_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/src/barcode_node /home/vigma/ros2_ws/src/barcode_node /home/vigma/ros2_ws/build/barcode_node /home/vigma/ros2_ws/build/barcode_node /home/vigma/ros2_ws/build/barcode_node/CMakeFiles/barcode_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vigma/ros2_ws/bin_picking_robot/build/barcode_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node /home/vigma/ros2_ws/bin_picking_robot/src/barcode_node /home/vigma/ros2_ws/bin_picking_robot/build/barcode_node /home/vigma/ros2_ws/bin_picking_robot/build/barcode_node /home/vigma/ros2_ws/bin_picking_robot/build/barcode_node/CMakeFiles/barcode_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/barcode_node.dir/depend
 

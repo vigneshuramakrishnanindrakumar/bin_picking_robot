@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/src/stacklight_node
+CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vigma/ros2_ws/build/stacklight_node
+CMAKE_BINARY_DIR = /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stacklight_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/stacklight_node.dir/progress.make
 include CMakeFiles/stacklight_node.dir/flags.make
 
 CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o: CMakeFiles/stacklight_node.dir/flags.make
-CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o: /home/vigma/ros2_ws/src/stacklight_node/src/stacklight_node.cpp
+CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o: /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node/src/stacklight_node.cpp
 CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o: CMakeFiles/stacklight_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vigma/ros2_ws/build/stacklight_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o -MF CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o.d -o CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o -c /home/vigma/ros2_ws/src/stacklight_node/src/stacklight_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o -MF CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o.d -o CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o -c /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node/src/stacklight_node.cpp
 
 CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vigma/ros2_ws/src/stacklight_node/src/stacklight_node.cpp > CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node/src/stacklight_node.cpp > CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.i
 
 CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vigma/ros2_ws/src/stacklight_node/src/stacklight_node.cpp -o CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node/src/stacklight_node.cpp -o CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.s
 
 # Object files for target stacklight_node
 stacklight_node_OBJECTS = \
@@ -93,12 +93,12 @@ stacklight_node_EXTERNAL_OBJECTS =
 stacklight_node: CMakeFiles/stacklight_node.dir/src/stacklight_node.cpp.o
 stacklight_node: CMakeFiles/stacklight_node.dir/build.make
 stacklight_node: /opt/ros/humble/lib/librclcpp.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
 stacklight_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 stacklight_node: /opt/ros/humble/lib/librcl.so
 stacklight_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -132,22 +132,30 @@ stacklight_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so
 stacklight_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so
 stacklight_node: /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so
 stacklight_node: /opt/ros/humble/lib/libtracetools.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
+stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
 stacklight_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 stacklight_node: /opt/ros/humble/lib/librmw.so
-stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
-stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+stacklight_node: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
+stacklight_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 stacklight_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 stacklight_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 stacklight_node: /opt/ros/humble/lib/librcpputils.so
@@ -155,7 +163,7 @@ stacklight_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 stacklight_node: /opt/ros/humble/lib/librcutils.so
 stacklight_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 stacklight_node: CMakeFiles/stacklight_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vigma/ros2_ws/build/stacklight_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable stacklight_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable stacklight_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/stacklight_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -167,6 +175,6 @@ CMakeFiles/stacklight_node.dir/clean:
 .PHONY : CMakeFiles/stacklight_node.dir/clean
 
 CMakeFiles/stacklight_node.dir/depend:
-	cd /home/vigma/ros2_ws/build/stacklight_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/src/stacklight_node /home/vigma/ros2_ws/src/stacklight_node /home/vigma/ros2_ws/build/stacklight_node /home/vigma/ros2_ws/build/stacklight_node /home/vigma/ros2_ws/build/stacklight_node/CMakeFiles/stacklight_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/src/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node /home/vigma/ros2_ws/bin_picking_robot/build/stacklight_node/CMakeFiles/stacklight_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/stacklight_node.dir/depend
 

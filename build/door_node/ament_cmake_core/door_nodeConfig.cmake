@@ -16,7 +16,7 @@ set(_door_node_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT door_node_FIND_QUIETLY)
-  message(STATUS "Found door_node: 0.0.0 (${door_node_DIR})")
+  message(STATUS "Found door_node: 0.0.1 (${door_node_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -1,0 +1,467 @@
+[0.076s] Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/bin_picking_robot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/bin_picking_robot/install/interfaces
+[0.804s] -- The C compiler identification is GNU 11.4.0
+[2.169s] -- The CXX compiler identification is GNU 11.4.0
+[2.995s] -- Detecting C compiler ABI info
+[3.470s] -- Detecting C compiler ABI info - done
+[3.489s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.497s] -- Detecting C compile features
+[3.500s] -- Detecting C compile features - done
+[3.511s] -- Detecting CXX compiler ABI info
+[3.971s] -- Detecting CXX compiler ABI info - done
+[3.995s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.996s] -- Detecting CXX compile features
+[3.998s] -- Detecting CXX compile features - done
+[4.035s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.496s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.821s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[4.837s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.880s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.390s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.546s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[6.633s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[7.306s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.194s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.550s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[8.562s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[9.617s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[9.617s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[9.617s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[9.617s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[9.673s] -- Found PythonExtra: .so  
+[10.232s] -- Configuring done
+[10.522s] -- Generating done
+[10.570s] -- Build files have been written to: /home/vigma/ros2_ws/bin_picking_robot/build/interfaces
+[10.594s] Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/vigma/ros2_ws/bin_picking_robot/src/interfaces -DCMAKE_INSTALL_PREFIX=/home/vigma/ros2_ws/bin_picking_robot/install/interfaces
+[10.601s] Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/bin_picking_robot/build/interfaces -- -j16 -l16
+[10.749s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[10.799s] [  2%] [34m[1mGenerating Rust code for ROS interfaces[0m
+[10.800s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[10.833s] [  3%] Built target ament_cmake_python_copy_interfaces
+[11.567s] running egg_info
+[11.568s] creating interfaces.egg-info
+[11.571s] writing interfaces.egg-info/PKG-INFO
+[11.571s] writing dependency_links to interfaces.egg-info/dependency_links.txt
+[11.572s] writing top-level names to interfaces.egg-info/top_level.txt
+[11.573s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[11.583s] reading manifest file 'interfaces.egg-info/SOURCES.txt'
+[11.585s] writing manifest file 'interfaces.egg-info/SOURCES.txt'
+[11.662s] [  3%] Built target ament_cmake_python_build_interfaces_egg
+[11.756s] [  3%] Built target interfaces__rs
+[12.915s] [  4%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/door_state__functions.c.o[0m
+[12.916s] [  5%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/barcode__functions.c.o[0m
+[12.927s] [  6%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/emergency_state__functions.c.o[0m
+[12.933s] [  7%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/msg/detail/stack_light__functions.c.o[0m
+[12.936s] [  9%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/get_barcode__functions.c.o[0m
+[12.938s] [ 10%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/toggle_door__functions.c.o[0m
+[12.941s] [ 12%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/press_emergency__functions.c.o[0m
+[12.941s] [ 12%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_c.dir/rosidl_generator_c/interfaces/srv/detail/reset_emergency__functions.c.o[0m
+[12.967s] [ 12%] Built target interfaces__cpp
+[13.009s] [ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[13.012s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[13.016s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[13.260s] [ 17%] [32m[1mLinking C shared library libinterfaces__rosidl_generator_c.so[0m
+[13.580s] [ 17%] Built target interfaces__rosidl_generator_c
+[13.629s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[13.630s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[13.630s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[14.456s] [ 21%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/barcode__type_support.cpp.o[0m
+[14.457s] [ 22%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/door_state__type_support.cpp.o[0m
+[14.457s] [ 25%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/emergency_state__type_support.cpp.o[0m
+[14.458s] [ 25%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/msg/stack_light__type_support.cpp.o[0m
+[14.459s] [ 26%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/press_emergency__type_support.cpp.o[0m
+[14.461s] [ 28%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/get_barcode__type_support.cpp.o[0m
+[14.461s] [ 28%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/reset_emergency__type_support.cpp.o[0m
+[14.464s] [ 29%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/interfaces/srv/toggle_door__type_support.cpp.o[0m
+[14.816s] [ 30%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/emergency_state__type_support.cpp.o[0m
+[14.819s] [ 31%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/door_state__type_support.cpp.o[0m
+[14.827s] [ 32%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/barcode__type_support.cpp.o[0m
+[14.831s] [ 34%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/msg/detail/stack_light__type_support.cpp.o[0m
+[15.379s] [ 35%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/barcode__type_support.cpp.o[0m
+[15.563s] [ 36%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/door_state__type_support.cpp.o[0m
+[15.702s] [ 37%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/barcode__type_support.cpp.o[0m
+[15.737s] [ 38%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/emergency_state__type_support.cpp.o[0m
+[15.928s] [ 39%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/msg/stack_light__type_support.cpp.o[0m
+[16.043s] [ 40%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/door_state__type_support.cpp.o[0m
+[16.090s] [ 42%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/get_barcode__type_support.cpp.o[0m
+[16.100s] [ 43%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/toggle_door__type_support.cpp.o[0m
+[16.122s] [ 44%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/emergency_state__type_support.cpp.o[0m
+[16.159s] [ 45%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/get_barcode__type_support.cpp.o[0m
+[16.173s] [ 46%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/toggle_door__type_support.cpp.o[0m
+[16.182s] [ 47%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/press_emergency__type_support.cpp.o[0m
+[16.204s] [ 48%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/press_emergency__type_support.cpp.o[0m
+[16.214s] [ 50%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_cpp.so[0m
+[16.248s] [ 51%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/msg/detail/dds_fastrtps/stack_light__type_support.cpp.o[0m
+[16.262s] [ 52%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/barcode__type_support.c.o[0m
+[16.271s] [ 53%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/interfaces/srv/reset_emergency__type_support.cpp.o[0m
+[16.378s] [ 54%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/interfaces/srv/detail/reset_emergency__type_support.cpp.o[0m
+[16.424s] [ 55%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_c.so[0m
+[16.425s] [ 56%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/door_state__type_support.c.o[0m
+[16.509s] [ 57%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/barcode__type_support_c.cpp.o[0m
+[16.613s] [ 59%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/emergency_state__type_support.c.o[0m
+[16.728s] [ 60%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/get_barcode__type_support.cpp.o[0m
+[16.763s] [ 60%] Built target interfaces__rosidl_typesupport_cpp
+[16.804s] [ 61%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/toggle_door__type_support.cpp.o[0m
+[16.805s] [ 62%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/msg/detail/stack_light__type_support.c.o[0m
+[16.811s] [ 63%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/door_state__type_support_c.cpp.o[0m
+[16.848s] [ 64%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/press_emergency__type_support.cpp.o[0m
+[16.919s] [ 65%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/get_barcode__type_support.c.o[0m
+[16.998s] [ 67%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/interfaces/srv/detail/dds_fastrtps/reset_emergency__type_support.cpp.o[0m
+[17.010s] [ 67%] Built target interfaces__rosidl_typesupport_c
+[17.063s] [ 68%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/emergency_state__type_support_c.cpp.o[0m
+[17.111s] [ 69%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/toggle_door__type_support.c.o[0m
+[17.299s] [ 70%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/press_emergency__type_support.c.o[0m
+[17.551s] [ 71%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/interfaces/srv/detail/reset_emergency__type_support.c.o[0m
+[17.764s] [ 72%] [32m[1mLinking C shared library libinterfaces__rosidl_typesupport_introspection_c.so[0m
+[17.894s] [ 73%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/msg/detail/stack_light__type_support_c.cpp.o[0m
+[17.928s] [ 75%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/get_barcode__type_support_c.cpp.o[0m
+[18.324s] [ 76%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/toggle_door__type_support_c.cpp.o[0m
+[18.327s] [ 77%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/press_emergency__type_support_c.cpp.o[0m
+[18.364s] [ 77%] Built target interfaces__rosidl_typesupport_introspection_c
+[18.381s] [ 78%] [32mBuilding CXX object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/interfaces/srv/detail/reset_emergency__type_support_c.cpp.o[0m
+[18.388s] [ 79%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_introspection_cpp.so[0m
+[18.857s] [ 79%] Built target interfaces__rosidl_typesupport_introspection_cpp
+[19.042s] [ 80%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.552s] [ 80%] Built target interfaces__rosidl_typesupport_fastrtps_cpp
+[19.685s] [ 81%] [32m[1mLinking CXX shared library libinterfaces__rosidl_typesupport_fastrtps_c.so[0m
+[20.130s] [ 81%] Built target interfaces__rosidl_typesupport_fastrtps_c
+[20.204s] [ 81%] Built target interfaces
+[20.273s] [ 82%] [34m[1mGenerating Python code for ROS interfaces[0m
+[23.122s] [ 82%] Built target interfaces__py
+[23.196s] [ 84%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_door_state_s.c.o[0m
+[23.200s] [ 85%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_barcode_s.c.o[0m
+[23.201s] [ 87%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_stack_light_s.c.o[0m
+[23.202s] [ 87%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_get_barcode_s.c.o[0m
+[23.205s] [ 89%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/msg/_emergency_state_s.c.o[0m
+[23.206s] [ 89%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_toggle_door_s.c.o[0m
+[23.207s] [ 90%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_reset_emergency_s.c.o[0m
+[23.208s] [ 92%] [32mBuilding C object CMakeFiles/interfaces__rosidl_generator_py.dir/rosidl_generator_py/interfaces/srv/_press_emergency_s.c.o[0m
+[23.810s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/libinterfaces__rosidl_generator_py.so[0m
+[24.135s] [ 93%] Built target interfaces__rosidl_generator_py
+[24.211s] [ 95%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[24.211s] [ 95%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[24.213s] [ 96%] [32mBuilding C object CMakeFiles/interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[24.651s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.661s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.664s] [100%] [32m[1mLinking C shared library rosidl_generator_py/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[24.904s] [100%] Built target interfaces__rosidl_typesupport_c__pyext
+[24.905s] [100%] Built target interfaces__rosidl_typesupport_introspection_c__pyext
+[24.905s] [100%] Built target interfaces__rosidl_typesupport_fastrtps_c__pyext
+[24.962s] Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/vigma/ros2_ws/bin_picking_robot/build/interfaces -- -j16 -l16
+[24.996s] Invoking command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/bin_picking_robot/build/interfaces
+[25.023s] -- Install configuration: ""
+[25.031s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/ament_index/resource_index/rosidl_interfaces/interfaces
+[25.032s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.037s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.040s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_c__visibility_control.h
+[25.040s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/door_state.h
+[25.041s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/emergency_state.h
+[25.042s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/stack_light.h
+[25.042s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/barcode.h
+[25.043s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.045s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__struct.h
+[25.046s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__type_support.h
+[25.046s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__functions.c
+[25.047s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__type_support.h
+[25.048s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__struct.h
+[25.049s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__functions.h
+[25.049s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__struct.h
+[25.050s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__functions.c
+[25.051s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__type_support.h
+[25.051s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__functions.c
+[25.052s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__functions.h
+[25.053s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__struct.h
+[25.054s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__functions.c
+[25.055s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__type_support.h
+[25.055s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__functions.h
+[25.056s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__functions.h
+[25.057s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.059s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/get_barcode.h
+[25.059s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/toggle_door.h
+[25.060s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/press_emergency.h
+[25.061s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.063s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__functions.h
+[25.063s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__struct.h
+[25.064s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__type_support.h
+[25.065s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__struct.h
+[25.066s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__functions.h
+[25.066s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__type_support.h
+[25.067s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__struct.h
+[25.068s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__struct.h
+[25.069s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__functions.c
+[25.069s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__functions.c
+[25.070s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__functions.c
+[25.071s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__type_support.h
+[25.072s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__functions.h
+[25.073s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__functions.h
+[25.073s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__functions.c
+[25.074s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__type_support.h
+[25.075s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/reset_emergency.h
+[25.079s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/library_path.sh
+[25.079s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/library_path.dsv
+[25.082s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so
+[25.084s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_c.so" to ""
+[25.085s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.085s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.085s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[25.086s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.086s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__rosidl_typesupport_fastrtps_c.h
+[25.087s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__rosidl_typesupport_fastrtps_c.h
+[25.087s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__rosidl_typesupport_fastrtps_c.h
+[25.088s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__rosidl_typesupport_fastrtps_c.h
+[25.089s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.090s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.090s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__rosidl_typesupport_fastrtps_c.h
+[25.091s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__rosidl_typesupport_fastrtps_c.h
+[25.092s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__rosidl_typesupport_fastrtps_c.h
+[25.092s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__rosidl_typesupport_fastrtps_c.h
+[25.093s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so
+[25.096s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[25.097s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.097s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.099s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[25.100s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.100s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__rosidl_typesupport_introspection_c.h
+[25.100s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__type_support.c
+[25.101s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__rosidl_typesupport_introspection_c.h
+[25.101s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__type_support.c
+[25.102s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__rosidl_typesupport_introspection_c.h
+[25.103s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__type_support.c
+[25.104s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__type_support.c
+[25.106s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__rosidl_typesupport_introspection_c.h
+[25.108s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.108s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.109s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__rosidl_typesupport_introspection_c.h
+[25.112s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__type_support.c
+[25.113s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__type_support.c
+[25.114s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__rosidl_typesupport_introspection_c.h
+[25.115s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__rosidl_typesupport_introspection_c.h
+[25.116s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__type_support.c
+[25.117s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__rosidl_typesupport_introspection_c.h
+[25.118s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__type_support.c
+[25.119s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so
+[25.121s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_c.so" to ""
+[25.122s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so
+[25.124s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_c.so" to ""
+[25.124s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.124s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.125s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/barcode.hpp
+[25.125s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[25.126s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/emergency_state.hpp
+[25.127s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/stack_light.hpp
+[25.127s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/door_state.hpp
+[25.128s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.129s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__type_support.hpp
+[25.129s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__traits.hpp
+[25.130s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__builder.hpp
+[25.130s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__struct.hpp
+[25.131s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__traits.hpp
+[25.132s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__builder.hpp
+[25.133s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__traits.hpp
+[25.133s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__struct.hpp
+[25.134s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__struct.hpp
+[25.135s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__builder.hpp
+[25.136s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__type_support.hpp
+[25.136s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__traits.hpp
+[25.137s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__struct.hpp
+[25.138s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__type_support.hpp
+[25.139s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__builder.hpp
+[25.140s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__type_support.hpp
+[25.140s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.140s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/press_emergency.hpp
+[25.141s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/get_barcode.hpp
+[25.142s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/reset_emergency.hpp
+[25.143s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.143s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__builder.hpp
+[25.144s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__builder.hpp
+[25.144s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__type_support.hpp
+[25.145s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__builder.hpp
+[25.146s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__traits.hpp
+[25.147s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__builder.hpp
+[25.147s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__type_support.hpp
+[25.148s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__struct.hpp
+[25.149s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__traits.hpp
+[25.149s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__traits.hpp
+[25.150s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__struct.hpp
+[25.151s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__struct.hpp
+[25.152s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__type_support.hpp
+[25.153s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__type_support.hpp
+[25.154s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__struct.hpp
+[25.155s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__traits.hpp
+[25.155s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/toggle_door.hpp
+[25.156s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.157s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.157s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[25.157s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.158s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__rosidl_typesupport_fastrtps_cpp.hpp
+[25.159s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__rosidl_typesupport_fastrtps_cpp.hpp
+[25.159s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__rosidl_typesupport_fastrtps_cpp.hpp
+[25.160s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/dds_fastrtps
+[25.162s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__rosidl_typesupport_fastrtps_cpp.hpp
+[25.163s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.164s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.164s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__rosidl_typesupport_fastrtps_cpp.hpp
+[25.164s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__rosidl_typesupport_fastrtps_cpp.hpp
+[25.165s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__rosidl_typesupport_fastrtps_cpp.hpp
+[25.165s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/dds_fastrtps
+[25.168s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__rosidl_typesupport_fastrtps_cpp.hpp
+[25.169s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so
+[25.171s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[25.171s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces
+[25.172s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg
+[25.172s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail
+[25.172s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__rosidl_typesupport_introspection_cpp.hpp
+[25.173s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__rosidl_typesupport_introspection_cpp.hpp
+[25.173s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/barcode__type_support.cpp
+[25.174s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__type_support.cpp
+[25.174s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/emergency_state__type_support.cpp
+[25.175s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/stack_light__rosidl_typesupport_introspection_cpp.hpp
+[25.176s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__rosidl_typesupport_introspection_cpp.hpp
+[25.177s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/msg/detail/door_state__type_support.cpp
+[25.178s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv
+[25.178s] -- Up-to-date: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail
+[25.178s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__rosidl_typesupport_introspection_cpp.hpp
+[25.179s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__type_support.cpp
+[25.180s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__type_support.cpp
+[25.181s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/press_emergency__rosidl_typesupport_introspection_cpp.hpp
+[25.181s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__rosidl_typesupport_introspection_cpp.hpp
+[25.182s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/toggle_door__rosidl_typesupport_introspection_cpp.hpp
+[25.183s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/get_barcode__type_support.cpp
+[25.184s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/include/interfaces/interfaces/srv/detail/reset_emergency__type_support.cpp
+[25.185s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so
+[25.187s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[25.187s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so
+[25.188s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_typesupport_cpp.so" to ""
+[25.189s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/pythonpath.sh
+[25.190s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/pythonpath.dsv
+[25.190s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.1-py3.10.egg-info
+[25.198s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.1-py3.10.egg-info/top_level.txt
+[25.198s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.1-py3.10.egg-info/dependency_links.txt
+[25.199s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.1-py3.10.egg-info/SOURCES.txt
+[25.200s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces-0.0.1-py3.10.egg-info/PKG-INFO
+[25.201s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces
+[25.202s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[25.203s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/libinterfaces__rosidl_generator_py.so
+[25.204s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py
+[25.205s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg
+[25.208s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_emergency_state_s.c
+[25.209s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_door_state.py
+[25.210s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_barcode_s.c
+[25.211s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py
+[25.212s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_stack_light_s.c
+[25.213s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_emergency_state.py
+[25.213s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_barcode.py
+[25.214s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_stack_light.py
+[25.214s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_door_state_s.c
+[25.215s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv
+[25.217s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_toggle_door.py
+[25.218s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py
+[25.219s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_reset_emergency.py
+[25.219s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_barcode.py
+[25.220s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_barcode_s.c
+[25.221s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_press_emergency.py
+[25.222s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_press_emergency_s.c
+[25.223s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_toggle_door_s.c
+[25.223s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_reset_emergency_s.c
+[25.224s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_c.c
+[25.225s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[25.226s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[25.227s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[25.228s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[25.347s] Listing '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces'...
+[25.348s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/__init__.py'...
+[25.348s] Listing '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg'...
+[25.348s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/__init__.py'...
+[25.348s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_barcode.py'...
+[25.348s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_door_state.py'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_emergency_state.py'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/msg/_stack_light.py'...
+[25.349s] Listing '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/__init__.py'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_get_barcode.py'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_press_emergency.py'...
+[25.349s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_reset_emergency.py'...
+[25.350s] Compiling '/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/srv/_toggle_door.py'...
+[25.361s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[25.363s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[25.364s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[25.366s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[25.367s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[25.369s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/local/lib/python3.10/dist-packages/interfaces/interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[25.369s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_py.so
+[25.371s] -- Set runtime path of "/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib/libinterfaces__rosidl_generator_py.so" to ""
+[25.373s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/ament_index/resource_index/rust_packages/interfaces
+[25.373s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust
+[25.375s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/Cargo.toml
+[25.376s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src
+[25.378s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/lib.rs
+[25.378s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/msg
+[25.380s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/msg/rmw.rs
+[25.381s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/srv
+[25.383s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/srv/rmw.rs
+[25.384s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/srv.rs
+[25.384s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/src/msg.rs
+[25.385s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/rust/build.rs
+[25.388s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/Barcode.idl
+[25.388s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/DoorState.idl
+[25.389s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/EmergencyState.idl
+[25.390s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/StackLight.idl
+[25.393s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/GetBarcode.idl
+[25.394s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ToggleDoor.idl
+[25.394s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/PressEmergency.idl
+[25.395s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ResetEmergency.idl
+[25.396s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/Barcode.msg
+[25.397s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/DoorState.msg
+[25.398s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/EmergencyState.msg
+[25.399s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/msg/StackLight.msg
+[25.401s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/GetBarcode.srv
+[25.402s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/GetBarcode_Request.msg
+[25.403s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/GetBarcode_Response.msg
+[25.404s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ToggleDoor.srv
+[25.405s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ToggleDoor_Request.msg
+[25.415s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ToggleDoor_Response.msg
+[25.416s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/PressEmergency.srv
+[25.417s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/PressEmergency_Request.msg
+[25.418s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/PressEmergency_Response.msg
+[25.419s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ResetEmergency.srv
+[25.420s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ResetEmergency_Request.msg
+[25.421s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/srv/ResetEmergency_Response.msg
+[25.425s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/ament_index/resource_index/package_run_dependencies/interfaces
+[25.430s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/ament_index/resource_index/parent_prefix_path/interfaces
+[25.431s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/ament_prefix_path.sh
+[25.432s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/ament_prefix_path.dsv
+[25.434s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/path.sh
+[25.435s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/environment/path.dsv
+[25.436s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/local_setup.bash
+[25.437s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/local_setup.sh
+[25.438s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/local_setup.zsh
+[25.439s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/local_setup.dsv
+[25.440s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/package.dsv
+[25.444s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/ament_index/resource_index/packages/interfaces
+[25.447s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport.cmake
+[25.448s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cExport-noconfig.cmake
+[25.450s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[25.451s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[25.452s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport.cmake
+[25.453s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[25.455s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport.cmake
+[25.456s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[25.457s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_cppExport.cmake
+[25.458s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[25.460s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[25.460s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[25.462s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[25.463s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport.cmake
+[25.464s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[25.465s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport.cmake
+[25.466s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/export_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[25.467s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/rosidl_cmake-extras.cmake
+[25.468s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[25.469s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[25.470s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[25.471s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[25.472s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[25.473s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[25.474s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfacesConfig.cmake
+[25.475s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/cmake/interfacesConfig-version.cmake
+[25.475s] -- Installing: /home/vigma/ros2_ws/bin_picking_robot/install/interfaces/share/interfaces/package.xml
+[25.488s] Invoked command in '/home/vigma/ros2_ws/bin_picking_robot/build/interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/vigma/ros2_ws/bin_picking_robot/build/interfaces

@@ -1,8 +1,8 @@
-# Install script for directory: /home/vigma/ros2_ws/src/cell_controller
+# Install script for directory: /home/vigma/ros2_ws/bin_picking_robot/src/cell_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/install/cell_controller")
+  set(CMAKE_INSTALL_PREFIX "/home/vigma/ros2_ws/bin_picking_robot/install/cell_controller")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,31 +43,55 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cell_controller" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/build/cell_controller/cell_controller")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cell_controller" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/robot_server")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller"
-         OLD_RPATH "/opt/ros/humble/lib:"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server"
+         OLD_RPATH "/opt/ros/humble/lib:/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/cell_controller")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/robot_server")
     endif()
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cell_controller")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cell_controller" TYPE EXECUTABLE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/wms_server")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server"
+         OLD_RPATH "/opt/ros/humble/lib:/home/vigma/ros2_ws/bin_picking_robot/install/interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cell_controller/wms_server")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cell_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/vigma/ros2_ws/bin_picking_robot/src/cell_controller/include/")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/cell_controller")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cell_controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +99,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,42 +107,42 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller/environment" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller/environment" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/packages/cell_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_index/share/ament_index/resource_index/packages/cell_controller")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller/cmake" TYPE FILE FILES
-    "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_core/cell_controllerConfig.cmake"
-    "/home/vigma/ros2_ws/build/cell_controller/ament_cmake_core/cell_controllerConfig-version.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_core/cell_controllerConfig.cmake"
+    "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/ament_cmake_core/cell_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/src/cell_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cell_controller" TYPE FILE FILES "/home/vigma/ros2_ws/bin_picking_robot/src/cell_controller/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -129,5 +153,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/vigma/ros2_ws/build/cell_controller/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

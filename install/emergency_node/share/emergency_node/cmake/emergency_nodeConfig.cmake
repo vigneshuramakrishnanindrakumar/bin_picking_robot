@@ -16,7 +16,7 @@ set(_emergency_node_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT emergency_node_FIND_QUIETLY)
-  message(STATUS "Found emergency_node: 0.0.0 (${emergency_node_DIR})")
+  message(STATUS "Found emergency_node: 0.0.1 (${emergency_node_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/src/cell_controller
+CMAKE_SOURCE_DIR = /home/vigma/ros2_ws/bin_picking_robot/src/cell_controller
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vigma/ros2_ws/build/cell_controller
+CMAKE_BINARY_DIR = /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles /home/vigma/ros2_ws/build/cell_controller//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/build/cell_controller/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vigma/ros2_ws/bin_picking_robot/build/cell_controller/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -198,41 +198,78 @@ cell_controller_uninstall/fast:
 .PHONY : cell_controller_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named cell_controller
+# Target rules for targets named robot_server
 
 # Build rule for target.
-cell_controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cell_controller
-.PHONY : cell_controller
+robot_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_server
+.PHONY : robot_server
 
 # fast build rule for target.
-cell_controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/build
-.PHONY : cell_controller/fast
+robot_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/build
+.PHONY : robot_server/fast
 
-src/controller.o: src/controller.cpp.o
-.PHONY : src/controller.o
+#=============================================================================
+# Target rules for targets named wms_server
+
+# Build rule for target.
+wms_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 wms_server
+.PHONY : wms_server
+
+# fast build rule for target.
+wms_server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/build
+.PHONY : wms_server/fast
+
+src/robot_server.o: src/robot_server.cpp.o
+.PHONY : src/robot_server.o
 
 # target to build an object file
-src/controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/src/controller.cpp.o
-.PHONY : src/controller.cpp.o
+src/robot_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/src/robot_server.cpp.o
+.PHONY : src/robot_server.cpp.o
 
-src/controller.i: src/controller.cpp.i
-.PHONY : src/controller.i
+src/robot_server.i: src/robot_server.cpp.i
+.PHONY : src/robot_server.i
 
 # target to preprocess a source file
-src/controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/src/controller.cpp.i
-.PHONY : src/controller.cpp.i
+src/robot_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/src/robot_server.cpp.i
+.PHONY : src/robot_server.cpp.i
 
-src/controller.s: src/controller.cpp.s
-.PHONY : src/controller.s
+src/robot_server.s: src/robot_server.cpp.s
+.PHONY : src/robot_server.s
 
 # target to generate assembly for a file
-src/controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cell_controller.dir/build.make CMakeFiles/cell_controller.dir/src/controller.cpp.s
-.PHONY : src/controller.cpp.s
+src/robot_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_server.dir/build.make CMakeFiles/robot_server.dir/src/robot_server.cpp.s
+.PHONY : src/robot_server.cpp.s
+
+src/wms_server.o: src/wms_server.cpp.o
+.PHONY : src/wms_server.o
+
+# target to build an object file
+src/wms_server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/src/wms_server.cpp.o
+.PHONY : src/wms_server.cpp.o
+
+src/wms_server.i: src/wms_server.cpp.i
+.PHONY : src/wms_server.i
+
+# target to preprocess a source file
+src/wms_server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/src/wms_server.cpp.i
+.PHONY : src/wms_server.cpp.i
+
+src/wms_server.s: src/wms_server.cpp.s
+.PHONY : src/wms_server.s
+
+# target to generate assembly for a file
+src/wms_server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/wms_server.dir/build.make CMakeFiles/wms_server.dir/src/wms_server.cpp.s
+.PHONY : src/wms_server.cpp.s
 
 # Help Target
 help:
@@ -249,10 +286,14 @@ help:
 	@echo "... test"
 	@echo "... cell_controller_uninstall"
 	@echo "... uninstall"
-	@echo "... cell_controller"
-	@echo "... src/controller.o"
-	@echo "... src/controller.i"
-	@echo "... src/controller.s"
+	@echo "... robot_server"
+	@echo "... wms_server"
+	@echo "... src/robot_server.o"
+	@echo "... src/robot_server.i"
+	@echo "... src/robot_server.s"
+	@echo "... src/wms_server.o"
+	@echo "... src/wms_server.i"
+	@echo "... src/wms_server.s"
 .PHONY : help
 
 

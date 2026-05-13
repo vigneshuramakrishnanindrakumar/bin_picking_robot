@@ -16,7 +16,7 @@ set(_stacklight_node_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT stacklight_node_FIND_QUIETLY)
-  message(STATUS "Found stacklight_node: 0.0.0 (${stacklight_node_DIR})")
+  message(STATUS "Found stacklight_node: 0.0.1 (${stacklight_node_DIR})")
 endif()
 
 # warn when using a deprecated package
