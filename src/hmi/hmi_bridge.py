@@ -51,6 +51,7 @@ class HmiBridgeNode:
 
     def _on_door(self, msg):
         with state_lock:
+            print(f"[HMI] Door state updated: {'closed' if msg.is_closed else 'open'}")
             state["door_closed"] = msg.is_closed
 
     def _on_emergency(self, msg):
@@ -156,7 +157,7 @@ def main():
     ros_thread.start()
 
     # HTTP server (blocks main thread)
-    server = HTTPServer(("0.0.0.0", HMI_PORT), HmiHandler)
+    server = HTTPServer(("127.0.0.1", HMI_PORT), HmiHandler)
     print(f"[HMI] Serving at http://localhost:{HMI_PORT}")
     server.serve_forever()
 

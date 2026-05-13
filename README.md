@@ -112,5 +112,9 @@ curl -X POST http://localhost:8080/pick \
 Then open `http://localhost:8090`.
 
 ### Remark
-If the Door/Emergency node fails, the last known state is currently retained. This behavior can be improved later by introducing a proper state machine or a heartbeat mechanism to detect node liveness. For now, a service-based approach is used, which simply toggles or updates the currently published state as specified in the documentation.
+If the Door/Emergency node fails, the last known state is currently retained. This behavior can be improved in the future by introducing a proper state machine or a heartbeat mechanism to detect node liveness.
+
+For now, a service-based approach is used, which simply toggles or updates the currently published state as specified in the documentation.
+
+Additionally, ChatGPT was used as a reference for socket syntax and for implementing the HTTP client and HTTPS server components.
 
