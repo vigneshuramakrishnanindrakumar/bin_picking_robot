@@ -9,7 +9,7 @@ Node & Topics
 The node interaction is captured as image (rosgraph.png) from rqt_graph 
 
 HTTP flow:
-  wms_server (8080 client)  ─ POST /pick ─►  robot_server (8080)
+  wms_server (8081 client)  ─ POST /pick ─►  robot_server (8080)
                             ─ POST /pick ─►  hmi_bridge (8090)  { update to HMI }
                             ─ POST /confirmPick ─► hmi_bridge (8090) { update to HMI }
 
