@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  bin_picking:
+    build: .
+    container_name: bin_picking_robot
+    ports:
+      - "8090:8090"
+      - "8080:8080"
+      - "8081:8081"
+    environment:
+      - DISPLAY=$DISPLAY
+    tty: true
