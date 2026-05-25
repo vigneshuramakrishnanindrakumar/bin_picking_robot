@@ -6,7 +6,7 @@ A ROS 2 (Humble) project implementing the control software for a robotic bin-pic
 
 ```
 Node & Topics
-The node interaction is captured as image (rosgraph.png) from rqt_graph 
+The node interaction is captured as image (rosgraph.png) from rqt_graph
 
 HTTP flow:
   wms_server (8081 client)  ─ POST /pick ─►  robot_server (8080)
@@ -21,11 +21,12 @@ HTTP flow:
 ## Packages
 
 `interfaces`
-`barcode_node` 
-`door_node` 
+`barcode_node`
+`door_node`
 `emergency_node`
 `stacklight_node`
 `cell_controller`
+`bin_picking_launch`
 `hmi`
 
 ## Prerequisites
@@ -54,33 +55,66 @@ source install/setup.bash
 
 ## Run
 
-Open **six terminals**, each sourced with `source ~/ros2_ws/install/setup.bash`:
+Use the launch package to start the ROS nodes together, then start the HMI bridge separately.
 
 ```bash
-# Terminal 1 — Barcode node
-ros2 run barcode_node barcode_node
+# Source workspace before launching
+source ~/ros2_ws/install/setup.bash
 
-# Terminal 2 — Door node
-ros2 run door_node door_node
-
-# Terminal 3 — Emergency node
-ros2 run emergency_node emergency_node
-
-# Terminal 4 — Stack-light node
-ros2 run stacklight_node stacklight_node
-
-# Terminal 5 — Robot server (port 8080) 
-ros2 run cell_controller robot_server
-
-# Terminal 6 — WMS server (port 8081, sends pick orders every 10 s)
-ros2 run cell_controller wms_server
-
-# Terminal 7 — HMI bridge + dashboard
-python3 src/hmi/hmi_bridge.py
-# Open http://localhost:8090 in your browser
+# Launch the robot system nodes
+ros2 launch bin_picking_launch bin_picking.launch.py
 ```
 
-## Interacting with the cell
+In a second terminal, start the HMI bridge:
+
+```bash
+cd ~/ros2_ws/src/bin_picking_robot
+python3 src/hmi/hmi_bridge.py
+```
+
+Open the dashboard in your browser:
+
+```bash
+http://localhost:8090
+```
+
+## Docker
+
+Build the Docker image from the repository root:
+
+```bash
+docker build -t bin_picking_robot .
+```
+
+Run the container with the required ports exposed:
+
+```bash
+docker run --rm -p 8090:8090 -p 8080:8080 -p 8081:8081 \
+  --name bin_picking_robot bin_picking_robot
+```
+
+Or use Docker Compose:
+
+```bash
+docker compose up --build
+```
+
+Then open the dashboard at:
+
+```bash
+http://localhost:8090
+```
+
+## HMI Controls
+
+The HMI exposes buttons for:
+- toggling the door state
+- pressing the emergency button
+- releasing the emergency button
+
+These controls call ROS services through the HMI bridge and update the dashboard in real time.
+
+## Interacting with the cell manually
 
 ### Toggle door open/closed
 ```bash
@@ -109,12 +143,14 @@ curl -X POST http://localhost:8080/pick \
   -d '{"pickId": 99, "quantity": 2}'
 ```
 
-Then open `http://localhost:8090`.
+Then refresh the HMI dashboard at `http://localhost:8090`.
 
-### Remark
-If the Door/Emergency node fails, the last known state is currently retained. This behavior can be improved in the future by introducing a proper state machine or a heartbeat mechanism to detect node liveness.
+## Notes
 
-For now, a service-based approach is used, which simply toggles or updates the currently published state as specified in the documentation.
+- The HMI bridge publishes live `door_state`, `emergency_state`, and `stack_light` updates to the browser.
+- The HMI page also receives the latest WMS request and robot response.
+- If the Door or Emergency node stops, the dashboard retains the last known state.
 
-Additionally, ChatGPT was used as a reference for socket syntax and for implementing the HTTP client and HTTPS server components.
+## Remarks
+This project currently uses a simple service-based state model. Future improvements could add a heartbeat or state-machine layer to better handle node failures and stale state.
 
