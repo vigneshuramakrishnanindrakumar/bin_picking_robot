@@ -1,8 +1,0 @@
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:msg/Barcode.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:msg/DoorState.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:msg/EmergencyState.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:msg/StackLight.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:srv/GetBarcode.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:srv/ToggleDoor.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:srv/PressEmergency.idl
-/home/vigma/ros2_ws/bin_picking_robot/build/interfaces/rosidl_adapter/interfaces:srv/ResetEmergency.idl
