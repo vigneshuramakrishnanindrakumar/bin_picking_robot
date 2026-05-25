@@ -105,6 +105,39 @@
     .kv-row .key { color: var(--muted); }
     .kv-row .val { font-weight: 600; font-family: monospace; }
 
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .control-button {
+      border: none;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+    }
+    .control-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.12);
+    }
+    .control-button:active {
+      transform: translateY(0);
+      opacity: .95;
+    }
+    .control-button:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      box-shadow: none;
+      transform: none;
+    }
+    .button-primary { background: var(--blue); color: white; }
+    .button-danger { background: var(--red); color: white; }
+    .button-warning { background: var(--yellow); color: black; }
+
     .null-val { color: var(--muted); font-style: italic; }
 
     /* Pulse animation for emergency */
@@ -146,6 +179,16 @@
         <span class="key">Emergency Button</span>
         <span class="val" id="emergency-val">—</span>
       </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="card">
+    <h2>Controls</h2>
+    <div class="button-row">
+      <button class="control-button button-primary" id="door-toggle-btn">Toggle Door</button>
+      <button class="control-button button-danger" id="emergency-press-btn">Press Emergency</button>
+      <button class="control-button button-warning" id="emergency-reset-btn">Release Emergency</button>
     </div>
   </div>
 
@@ -206,18 +249,27 @@
 
     // Door
     const doorEl = document.getElementById('door-val');
+    const doorBtn = document.getElementById('door-toggle-btn');
     if (s.door_closed) {
       doorEl.innerHTML = '<span class="badge badge-ok">✓ Closed</span>';
+      doorBtn.textContent = 'Open Door';
     } else {
       doorEl.innerHTML = '<span class="badge badge-warn">⚠ Open</span>';
+      doorBtn.textContent = 'Close Door';
     }
 
     // Emergency
     const emEl = document.getElementById('emergency-val');
+    const pressBtn = document.getElementById('emergency-press-btn');
+    const resetBtn = document.getElementById('emergency-reset-btn');
     if (s.emergency_pressed) {
       emEl.innerHTML = '<span class="badge badge-err pulse">🔴 PRESSED</span>';
+      pressBtn.disabled = true;
+      resetBtn.disabled = false;
     } else {
       emEl.innerHTML = '<span class="badge badge-ok">✓ Released</span>';
+      pressBtn.disabled = false;
+      resetBtn.disabled = true;
     }
 
     // Last request
@@ -247,6 +299,21 @@
       'Last updated: ' + new Date().toLocaleTimeString();
   }
 
+  async function sendAction(path) {
+    try {
+      const res = await fetch(path, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({})
+      });
+      if (!res.ok) {
+        console.warn('Action failed:', path, res.status);
+      }
+    } catch (e) {
+      console.warn('Action failed:', e);
+    }
+  }
+
   async function poll() {
     try {
       const r = await fetch('/state');
@@ -257,6 +324,18 @@
     }
     setTimeout(poll, 1000);
   }
+
+  document.getElementById('door-toggle-btn').addEventListener('click', () => {
+    sendAction('/door/toggle');
+  });
+
+  document.getElementById('emergency-press-btn').addEventListener('click', () => {
+    sendAction('/emergency/press');
+  });
+
+  document.getElementById('emergency-reset-btn').addEventListener('click', () => {
+    sendAction('/emergency/reset');
+  });
 
   poll();
 </script>

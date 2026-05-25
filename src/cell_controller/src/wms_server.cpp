@@ -35,12 +35,34 @@ static bool json_bool(const std::string & json, const std::string & key)
   return json.substr(pos, 4) == "true";
 }
 
+static std::string json_string(const std::string & json, const std::string & key)
+{
+  auto pos = json.find("\"" + key + "\"");
+  if (pos == std::string::npos) return "";
+  pos = json.find(':', pos);
+  if (pos == std::string::npos) return "";
+  ++pos;
+  while (pos < json.size() && (json[pos] == ' ' || json[pos] == '\t')) ++pos;
+  if (pos >= json.size()) return "";
+
+  if (json[pos] == '"') {
+    ++pos;
+    auto end = json.find('"', pos);
+    if (end == std::string::npos) return json.substr(pos);
+    return json.substr(pos, end - pos);
+  }
+
+  auto end = json.find_first_of(",}", pos);
+  if (end == std::string::npos) return json.substr(pos);
+  return json.substr(pos, end - pos);
+}
+
 // ---------------------------------------------------------------------------
 // WMS server
 // ---------------------------------------------------------------------------
 int main()
 {
-  const std::string robot_host = "172.21.107.99";
+  const std::string robot_host = "127.0.0.1";
   const int         robot_port = 8080;
 
   // Listening to robot on confirmPick
@@ -56,7 +78,7 @@ int main()
     int  pick_id  = json_int(req.body, "pickId");
     bool success  = json_bool(req.body, "pickSuccessful");
     int  barcode  = json_int(req.body, "itemBarcode");
-
+    std::string  error  = json_string(req.body, "errorMessage");
     
     latest_pick_id = pick_id;
     latest_barcode = barcode;
@@ -66,7 +88,7 @@ int main()
       "\"pickId\":" + std::to_string(pick_id) + ","
       "\"pickSuccessful\":" + std::string(success ? "true" : "false") + ","
       "\"itemBarcode\":" + std::to_string(barcode) + ","
-      "\"errorMessage\":null"
+      "\"errorMessage\":\"" + error + "\""
     "}";
 
     http_post("127.0.0.1", 8090, "/confirmPick", confirm_body);  // To HMI
