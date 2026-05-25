@@ -4,6 +4,7 @@
 import json
 import random
 import threading
+import time
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 
@@ -15,6 +16,7 @@ try:
     import rclpy
     from rclpy.node import Node
     from interfaces.msg import Barcode, DoorState, EmergencyState, StackLight
+    from interfaces.srv import ToggleDoor, PressEmergency, ResetEmergency
     HAS_ROS = True
 except ImportError:
     HAS_ROS = False
@@ -48,6 +50,54 @@ class HmiBridgeNode:
                                       self._on_emergency, 10)
         self.node.create_subscription(StackLight, "stack_light",
                                       self._on_stacklight, 10)
+
+        self.toggle_client = self.node.create_client(ToggleDoor, "toggle_door")
+        self.press_client = self.node.create_client(PressEmergency, "press_emergency")
+        self.reset_client = self.node.create_client(ResetEmergency, "reset_emergency")
+
+        self._wait_for_service(self.toggle_client, "toggle_door")
+        self._wait_for_service(self.press_client, "press_emergency")
+        self._wait_for_service(self.reset_client, "reset_emergency")
+
+    def _wait_for_service(self, client, name, timeout=5.0):
+        if not HAS_ROS:
+            return
+        if not client.wait_for_service(timeout_sec=timeout):
+            print(f"[HMI] Warning: service '{name}' not available")
+
+    def _call_service(self, client, request):
+        if not HAS_ROS or client is None:
+            return False
+        future = client.call_async(request)
+        deadline = time.time() + 5.0
+        while rclpy.ok() and not future.done() and time.time() < deadline:
+            time.sleep(0.01)
+        if not future.done():
+            return False
+        try:
+            future.result()
+            return True
+        except Exception as e:
+            print(f"[HMI] Service call failed: {e}")
+            return False
+
+    def toggle_door(self):
+        if not HAS_ROS:
+            return False
+        req = ToggleDoor.Request()
+        return self._call_service(self.toggle_client, req)
+
+    def press_emergency(self):
+        if not HAS_ROS:
+            return False
+        req = PressEmergency.Request()
+        return self._call_service(self.press_client, req)
+
+    def reset_emergency(self):
+        if not HAS_ROS:
+            return False
+        req = ResetEmergency.Request()
+        return self._call_service(self.reset_client, req)
 
     def _on_door(self, msg):
         with state_lock:
@@ -134,6 +184,27 @@ class HmiHandler(BaseHTTPRequestHandler):
 
             self._respond(200, "application/json", b'{"status":"ok"}')
 
+        elif self.path == "/door/toggle":
+            success = False
+            if hasattr(self.server, "bridge") and self.server.bridge is not None:
+                success = self.server.bridge.toggle_door()
+            body = json.dumps({"status": "ok" if success else "error"}).encode()
+            self._respond(200 if success else 500, "application/json", body)
+
+        elif self.path == "/emergency/press":
+            success = False
+            if hasattr(self.server, "bridge") and self.server.bridge is not None:
+                success = self.server.bridge.press_emergency()
+            body = json.dumps({"status": "ok" if success else "error"}).encode()
+            self._respond(200 if success else 500, "application/json", body)
+
+        elif self.path == "/emergency/reset":
+            success = False
+            if hasattr(self.server, "bridge") and self.server.bridge is not None:
+                success = self.server.bridge.reset_emergency()
+            body = json.dumps({"status": "ok" if success else "error"}).encode()
+            self._respond(200 if success else 500, "application/json", body)
+
         else:
             self._respond(404, "text/plain", b"Not found")
 
@@ -157,8 +228,9 @@ def main():
     ros_thread.start()
 
     # HTTP server (blocks main thread)
-    server = HTTPServer(("127.0.0.1", HMI_PORT), HmiHandler)
-    print(f"[HMI] Serving at http://localhost:{HMI_PORT}")
+    server = HTTPServer(("0.0.0.0", HMI_PORT), HmiHandler)
+    server.bridge = bridge
+    print(f"[HMI] Serving at http://0.0.0.0:{HMI_PORT}")
     server.serve_forever()
 
 
